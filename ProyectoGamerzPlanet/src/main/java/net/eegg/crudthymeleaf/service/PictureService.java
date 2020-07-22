@@ -24,8 +24,8 @@ public class PictureService {
 			Files.copy(file.getInputStream(), copyLocation, StandardCopyOption.REPLACE_EXISTING);
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new FileStorageException("Could not store file" + file.getOriginalFilename()
-			    + ". Please try again!");
+			throw new FileStorageException("Juego no encontrado" + file.getOriginalFilename()
+			    + ". Por Favor Intente de nuevo!");
 			
 		   }
 	}
